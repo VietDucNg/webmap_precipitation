@@ -22,5 +22,5 @@
 <p> 
 - <strong>Layer type</strong>: GeoJSON <br> 
 - <strong>Summary</strong>: Areas under a weather alert issued by the National Weather Service, such as a tornado warning. See the NWS for <a href = 'https://www.weather.gov/documentation/services-web-api#/default/get_alerts_active'>details on the API</a>. <br> 
-- <strong>Service URL</strong>: <a href='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'> <i> https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png </i></a><br> 
+- <strong>Service URL</strong>: <a href='https://www.weather.gov/documentation/services-web-api#/default/get_alerts_active'> <i> https://www.weather.gov/documentation/services-web-api#/default/get_alerts_active </i></a><br> 
 </p>

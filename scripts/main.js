@@ -116,4 +116,3 @@ L.easyButton('<span>&#8505;</span>', function(){
   }
 }).addTo(map);
 
-

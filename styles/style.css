@@ -22,20 +22,6 @@ html, body, #map {
 	box-shadow: 0 1px 5px rgba(0,0,0,65);
 }
 
-
-#title {
-	position: absolute;
-	top: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1000; /* Ensure the title stays on top of the map */
-	background-color: white;
-	padding: 5px 10px;
-	border-radius: 5px;
-	font-size: 20px;
-	box-shadow: 0 0 5px rgba(0,0,0,0.3);
-}
-
 #title {
 	position: absolute;
 	top: 10px;
