@@ -102,3 +102,18 @@ var layersControl = L.control.layers(baseLayers, overlayMaps).addTo(map);
 
 // add scale control to map
 L.control.scale().addTo(map);
+
+
+//// add info button
+var infoBox = document.getElementById('infoBox');
+infoBox.style.display = 'none'
+L.easyButton('<span>&#8505;</span>', function(){
+  // Toggle the display of the info box
+  if(infoBox.style.display == 'none') {
+    infoBox.style.display = 'block';
+  } else {
+    infoBox.style.display = 'none';
+  }
+}).addTo(map);
+
+

@@ -7,3 +7,53 @@ html, body, #map {
     height: 100vh;
     width: 100vw;
 }
+
+#infoBox {
+    display: none;
+    position: fixed;
+	font:12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	top: 86px;
+	left: 65px;
+	padding:5px;
+	width: 650px;
+	z-index: 1000;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0,0,0,65);
+}
+
+
+#title {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000; /* Ensure the title stays on top of the map */
+	background-color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+#title {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	
+	font-size: 20px;               /* Increase the font size */
+	font-family: 'Arial', sans-serif; /* Use a clean font */
+	font-weight: normal;             /* Make the text bold */
+	color: white;                  /* Text color */
+	
+	padding: 10px 20px;
+	background: linear-gradient(45deg, #4caf50, #00bcd4); /* Gradient background */
+	border-radius: 10px;           /* Rounded corners */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+	
+	text-align: center;            /* Center the text inside the title box */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+	}
+	  

@@ -6,20 +6,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <!-- title of the webpage-->
         <title>Real-time US precipitation and weather alert: data from National Weahter Service </title>
-        <!-- link my css -->
-        <link href="styles/style.css" rel="stylesheet">
+
         <!-- link leaflet css -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <!-- link easy button css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        <!-- link font awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link my css -->
+        <link href="styles/style.css" rel="stylesheet">
+
     </head>
     <body>
+         <!-- Add the map title -->
+        <div id="title"> Real-time US precipitation and weather webmap</div>
+
+        <!-- Add the map container -->
         <div id="map"></div>
+        
+        <!-- info box -->
+        <div id="infoBox">
+            <h2>Credit</h2>
+            <p> 👨‍🏫 The webmap developed by <a href='https://vietducng.github.io/'>Viet Nguyen</a> (<a href = 'https://geo.uni-greifswald.de/en/chairs/geographie/translate-to-english-fernerkundung-und-geoinformationsverarbeitung/translate-to-english-team/'>University of Greifswald | Institute of Geography and Geology</a>).</p>
+            <h2>Data</h2>
+            <h3>🌧️ Precipitation layer</h3>
+            <p> 
+            - <strong>Layer type</strong>: OGC Web Map Service <br> 
+            - <strong>Summary</strong>: A National Weather Service image product depicting current precipitation derived from a network of radar stations. The web service is provided by <a href='https://mesonet.agron.iastate.edu/ogc/'>Iowa State University Mesonet</a>. <br> 
+            - <strong>Service URL</strong>: <a href='https://www.weather.gov/documentation/services-web-api#/default/get_alerts_active'> <i> https://www.weather.gov/documentation/services-web-api#/default/get_alerts_active </i></a><br> 
+            </p>
+
+            <h3> 🌪️ Weather alerts layer</h3>
+            <p> 
+            - <strong>Layer type</strong>: GeoJSON <br> 
+            - <strong>Summary</strong>: Areas under a weather alert issued by the National Weather Service, such as a tornado warning. See the NWS for <a href = 'https://www.weather.gov/documentation/services-web-api#/default/get_alerts_active'>details on the API</a>. <br> 
+            - <strong>Service URL</strong>: <a href='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'> <i> https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png </i></a><br> 
+            </p>
+        </div>        
+        
         <!-- link leaflet scipt-->
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
         <!-- link jquery scipt-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- link easy button scipt-->
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+        <!-- link my script -->
         <script src="scripts/main.js"></script>
+
+        
+          
 
     </body>
 </html>
